@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LSUIElement</key>
+	<true/>
+	<key>VoiceTranscriptionProvider</key>
+	<string>apple</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Pip uses your microphone so you can talk to your local AI pet agent.</string>
+	<key>NSScreenCaptureUsageDescription</key>
+	<string>Pip needs screen recording access so its local agent can inspect your screen and point at useful UI.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Pip uses Apple Speech to transcribe your voice locally when you talk to it.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Pip needs reminders access to create reminders you ask for.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Pip needs calendar access to create events you ask for.</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Pip needs automation access to create Notes entries and control Apple apps for your tasks.</string>
+	<key>NSInputMonitoringUsageDescription</key>
+	<string>Pip needs input monitoring access so it can hear the push-to-talk shortcut and drive keyboard actions you request.</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+{
+  "name": "pip-agent-sidecar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local Pip agent sidecar for reliable browser and tool automation.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "install-browsers": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.57.0"
+  }
+}
